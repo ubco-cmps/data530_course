@@ -27,13 +27,19 @@ I have attached a picture of what you should see.
 
 <img src="../images/hypothesis.png" height="500px">
 
-<label><input type="checkbox" id="todo1-3" class="box"> **3. Login to the official course discussion forum (Piazza).** </input></label>
+<label><input type="checkbox" id="todo1-3" class="box"> **3. Create a Github.com account.** </input></label>
+
+Most (if not all) of the labs will be done on GitHub so you will need to [create an account](https://github.com) there. The privacy policy for [Github.com is here](https://docs.github.com/en/github/site-policy/github-privacy-statement).
+
+*Data for Github is stored on servers outside Canada. Please exercise caution whenever using personal information. If you would like to protect your identity, you may create an alternate email address and provide an alias/pseudonym rather than your real name and personal information. If you are not able to agree to the privacy policy, and the alias/pseudonym is not a suitable option for you, please contact me.*
+
+<label><input type="checkbox" id="todo1-4" class="box"> **4. Login to the official course discussion forum (Piazza).** </input></label>
 
 Within the Canvas course, [click the "Piazza" menu item](https://canvas.ubc.ca/courses/63470/external_tools/201?display=borderless) on the left menubar - you will be asked to create an account.
 
 *The Piazza tool is stored on servers outside Canada. When you access this site by clicking on the link through Canvas, you are being transferred to these servers. In order to protect your identity, UBC obfuscates your user ID before it is sent to the site. However, Piazza does require you to create an account on their servers. While Piazza adheres to strict U.S. privacy regulations (FERPA), UBC cannot guarantee security of your private details on servers outside of Canada. Please exercise caution whenever using personal information. You may wish to use a pseudonym to protect your privacy if you have concerns.*
 
-<label><input type="checkbox" id="todo1-4" class="box"> **4. Sign up for an account on sli.do.** </input></label> 
+<label><input type="checkbox" id="todo1-5" class="box"> **5. Sign up for an account on sli.do.** </input></label> 
 
 We will be using Sli.do as our online polling system. This is free for you, but you will need to create an account. The privacy policy for [Sli.do is linked here](https://www.sli.do/terms#privacy-policy).
 
