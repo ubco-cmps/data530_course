@@ -82,6 +82,7 @@ Some MDS courses (e.g. the capstone project) use the LastPass password manager t
 
 For our MDS courses and program announcements, correspondence and course forums we use the communication tool Slack. Slack can be accessed via the web browser, however we strongly recommend installing the Slack App. The Slack app can be installed from the Mac App Store, or from the Slack website. Installation instructions from the Slack website install method are here: [https://slack.com/intl/en-ca/help/articles/207677868-Download-Slack-for-Mac](https://slack.com/intl/en-ca/help/articles/207677868-Download-Slack-for-Mac)
 
+<!-- Disagree with this recommendation, Zsh is perfectly fine.
 ## Bash shell
 
 Apple recently changed the Mac default shell in the Terminal to Zsh, however, we aim to teach with the same shell across all three operating systems we support, which is the Bash shell. Thus, we ask that you change the default shell in your Terminal to Bash by opening the Terminal ([how to video](https://youtu.be/5AJbWEWwnbY)) and typing:
@@ -91,6 +92,27 @@ chsh -s /bin/bash
 ```
 
 You will have to quit all instances of open Terminals and then restart the Terminal for this to take effect.
+-->
+
+## Enhance your Terminal shell
+
+Apple recently changed the Mac default shell in the Terminal to Zsh - though the [reasons for this](https://thenextweb.com/dd/2019/06/04/why-does-macos-catalina-use-zsh-instead-of-bash-licensing/) are complicated, it is a huge improvement over the out-dated Bash version that came pre-installed on macOS.
+
+To make sure your shell is set to Zsh, open up your terminal and run this command:
+
+```
+chsh -s path
+```
+
+### [Optional] Install Ohmyzsh to get terminal colours, and highlighting
+
+Oh My Zsh is installed by running the following command in your Terminal: 
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+You may now customize your Terminal with themes by [following the directions here](sh -c "https://github.com/ohmyzsh/ohmyzsh#selecting-a-theme".
 
 ## Visual Studio Code
 
