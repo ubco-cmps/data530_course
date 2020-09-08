@@ -92,7 +92,7 @@ The open-source text editor Visual Studio Code (VS Code) is both a powerful text
     - "Register Code as an editor for supported file types"
     - "Add to PATH" (this should be selected by default).
 
-<img src="../imgs/vs_code.png" alt = ""/>
+<img src="../images/vs_code.png" alt = ""/>
 
 ## GitHub.com
 
@@ -114,13 +114,13 @@ Go to <https://git-scm.com/download/win> and download the windows version of git
 - *Optional* On the **Select Components** page, check "On the Desktop" under "Additional icons".
 - On the **Choosing the default editor used by Git** page, select "Use Visual Studio Code as Git's default editor" from the drop-down menu'
 
-<img src="../imgs/vscode-as-git-editor.png" alt = ""/>
+<img src="../images/vscode-as-git-editor.png" alt = ""/>
 
 > Note if you wish to pin Git Bash to the taskbar, you need to search for the program in the start menu, right click the entry and select "Pin to taskbar". If you instead first launch the program and pin it by right clicking on the taskbar icon, Git Bash will open with the wrong home directory (`/` instead of `/c/users/$USERNAME`.
 
 After installation, test if you were successful by opening the Git Bash program. Below is a picture of the Git Bash icon on the Desktop and an opened instance of the Git Bash terminal (we will often refer to this as just "the terminal"):
 
-<img src="../imgs/gitbash.png" alt = ""/>
+<img src="../images/gitbash.png" alt = ""/>
 
 In the terminal, type the following to check which version of Bash you just installed:
 
@@ -232,7 +232,7 @@ conda init bash
 
 You will see that this modified a few configuration files, which makes `conda` visible to the terminal. Close all open terminal windows and launch a new one, you should now see that the prompt string has changed to include the word `(base)` as in the screenshot below:
 
-<img src="../imgs/add-conda-env-to-ps1.png" alt = ""/>
+<img src="../images/add-conda-env-to-ps1.png" alt = ""/>
 
 If you type
 
@@ -279,7 +279,7 @@ conda 4.8.3
 > Now if you launch a new terminal instance,
 > you will see `(base)` on the same line as the rest of the prompt string as in the screenshot below.
 >
-> <img src="../imgs/remove-newline-from-ps1.png" alt = ""/>
+> <img src="../images/remove-newline-from-ps1.png" alt = ""/>
 
 ### Essential Python packages
 
@@ -340,7 +340,7 @@ To test that your JupyterLab installation is functional, you can type `jupyter l
 To exit out of JupyterLab you can click `File -> Shutdown`,
 or go to the terminal from which you launched JupyterLab and hold `Ctrl` while pressing `c` twice.
 
-<img src="../imgs/jupyter_lab.png" alt = ""/>
+<img src="../images/jupyter_lab.png" alt = ""/>
 
 ## R, IRkernel, Rtools, and RStudio
 
@@ -392,19 +392,19 @@ Download the Windows version of RStudio from <https://www.rstudio.com/products/r
 
 To see if you were successful, try opening RStudio by clicking on its icon. It should open and looks something like this picture below:
 
-<img src="../imgs/RStudio.png" alt = ""/>
+<img src="../images/RStudio.png" alt = ""/>
 
 Next, we will make sure that Rstudio uses the same directories as R from terminal for its configuration. To do this, we will need to set an environmental variable in Windows. First, open the start menu, type "env" and select the match that reads "Edit the system environment variables". Click the button at the bottom that reads "Environmental Variables...":
 
-<img src="../imgs/sys-props-env-vars.png" alt = ""/>
+<img src="../images/sys-props-env-vars.png" alt = ""/>
 
 Under "User variable" click the "New..." button:
 
-<img src="../imgs/env-vars-new-user-var.png" alt = ""/>
+<img src="../images/env-vars-new-user-var.png" alt = ""/>
 
 And type in `R_USER` as the "Variable name" and `C:\Users\username` as the "Variable value", replacing `username` with your actual user name (if you don't know your user name, look at the top of the screenshot above where it says "User variables for your_username"):
 
-<img src="../imgs/new-user-var-values.png" alt = ""/>
+<img src="../images/new-user-var-values.png" alt = ""/>
 
 Click "OK" on all of the three windows we opened above and you're done! If you open RStudio and R from terminal and type
 
@@ -466,11 +466,11 @@ jupyter lab
 
 A browser should have launched and you should see a page that looks like the screenshot below. Now click on "R" notebook (circled in red on the screenshot below) to launch an JupyterLab with an R kernel.
 
-<img src="../imgs/jupyter_lab_r_kernel.png" alt = ""/>
+<img src="../images/jupyter_lab_r_kernel.png" alt = ""/>
 
 Sometimes a kernel loads, but doesn't work as expected. To test whether your installation was done correctly now type `library(tidyverse)` in the code cell and click on the run button to run the cell. If your R kernel works you should see something like the image below:
 
-<img src="../imgs/jupyter_lab_r_kernel2.png" alt = ""/>
+<img src="../images/jupyter_lab_r_kernel2.png" alt = ""/>
 
 To improve the experience of using R in JupyterLab,
 we will add an extension that allows us to setup keyboard shortcuts for inserting text
@@ -564,9 +564,9 @@ your LaTeX environment is set up correctly.
 
 Later in the program, we will be using `make` to automate our analysis scripts. [Download `make` from this URL](https://downloads.sourceforge.net/project/ezwinports/make-4.3-without-guile-w32-bin.zip). Click on the downloaded zip-file to open it in the File Explorer and click the button in the "Extract" tab that reads "Extract all". Change the extract location to `C:\Users\YOUR_USERNAME\make-4.3` (substituting in your actual username instead of `YOUR_USERNAME`) and click "Extract". See the screenshots below if you're unsure what to click.
 
-<img src="../imgs/extract-make.png" alt = ""/>
+<img src="../images/extract-make.png" alt = ""/>
 
-<img src="../imgs/extract-make-path.png" alt = ""/>
+<img src="../images/extract-make-path.png" alt = ""/>
 
 Next we need to add make's `bin` folder to our PATH so that we can use the command `make` from the terminal (like we did with R earlier). Open the bash configuration file with VS Code again by pasting this into a terminal:
 
@@ -614,7 +614,7 @@ We will be using PostgreSQL as our database management system. You can [download
 
 To test if the installation was successful open the `SQL Shell` app from the Start menu. You will be asked to setup your configuration, accept the default value (the one within square brackets) for the first four values by pressing enter four times, then type in your password and press enter one last time. It should look like this if it is working correctly:
 
-<img src="../imgs/psql-windows.png" alt = ""/>
+<img src="../images/psql-windows.png" alt = ""/>
 
 ## Docker
 
@@ -661,7 +661,7 @@ For more examples and ideas, visit:
 
 The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
 
-<img src="../imgs/vscode.png" alt = ""/>
+<img src="../images/vscode.png" alt = ""/>
 
 To install an extension, you simply search for it in the search bar, click the extension you want, and then click "Install". There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:
 

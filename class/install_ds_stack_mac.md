@@ -149,7 +149,7 @@ x64
 
 The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. Now that we have installed all our other Data Science tools, we can install the VS Code extensions that work really well with them. From within VS Code you can open up the [Extension Marketplace (read more here)](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
 
-<img src="../imgs/VS Code.png" alt = ""/>
+<img src="../images/VS Code.png" alt = ""/>
 
 To install an extension, you simply search for it in the search bar, click the extension you want, and then click "Install". There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:
 
@@ -360,7 +360,7 @@ Download the macOS Desktop version of RStudio Preview from [https://rstudio.com/
 
 To see if you were successful, try opening RStudio by clicking on its icon (from Finder, Applications or Launchpad). It should open and look something like this picture below:
 
-<img src="../imgs/RStudio.png" alt = ""/>
+<img src="../images/RStudio.png" alt = ""/>
 
 
 ### Essential R packages
@@ -399,11 +399,11 @@ jupyter lab
 
 A browser should have launched and you should see a page that looks like the screenshot below. Now click on "R" notebook (circled in red on the screenshot below) to launch an JupyterLab with an R kernel.
 
-<img src="../imgs/jupyter_lab_r_kernel.png" alt = ""/>
+<img src="../images/jupyter_lab_r_kernel.png" alt = ""/>
 
 Sometimes a kernel loads, but doesn't work as expected. To test whether your installation was done correctly now type `library(tidyverse)` in the code cell and click on the run button to run the cell. If your R kernel works you should see something like the image below:
 
-<img src="../imgs/jupyter_lab_r_kernel2.png" alt = ""/>
+<img src="../images/jupyter_lab_r_kernel2.png" alt = ""/>
 
 To improve the experience of using R in JupyterLab,
 we will add an extension that allows us to setup keyboard shortcuts for inserting text
@@ -502,7 +502,7 @@ We will be using PostgreSQL as our database management system. You can [download
 
 To test if the installation was successful open the `SQL Shell` app from the LaunchPad or applications directory. You will be asked to setup your configuration, accept the default value (the one within square brackets) for the first four values by pressing enter four times, then type in your password and press enter one last time. It should look like this if it is working correctly:
 
-<img src="../imgs/psql-mac.png" alt = ""/>
+<img src="../images/psql-mac.png" alt = ""/>
 
 ## Docker
 
