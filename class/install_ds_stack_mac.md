@@ -32,8 +32,9 @@ These instructions will walk you through installing the required Data Science so
 - [Web browser](#web-browser)
 - [LastPass password manager](#lastpass-password-manager)
 - [Slack](#slack)
-- [Bash shell](#bash-shell)
+<!-- - [Bash shell](#bash-shell) -->
 - [Visual Studio Code](#visual-studio-code)
+- [VS Code extensions](#vs-code-extensions)
 - [GitHub](#github)
 - [Git](#git)
 - [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab)
@@ -43,8 +44,6 @@ These instructions will walk you through installing the required Data Science so
 - [LaTeX](#latex)
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
-- [VS Code extensions](#vs-code-extensions)
-- [Improving the bash configuration](#improving-the-bash-configuration)
 - [Post-installation notes](#post-installation-notes)
 
 ## Installation notes
@@ -56,13 +55,10 @@ In order to be able to support you effectively
 and minimize setup issues and software conflicts,
 we require all students to install the software stack the same way.
 
-In all the sections below,
-if you are presented with the choice to download either a 64-bit (also called x64)
+In all the sections below, if you are presented with the choice to download either a 64-bit (also called x64)
 or a 32-bit (also called x86) version of the application **always** choose the 64-bit version.
 
-Once you have completed these installation instructions,
-make sure to follow the post-installation notes at the end
-to check that all software is setup correctly.
+Once you have completed these installation instructions, make sure to follow the post-installation notes at the end to check that all software is setup correctly.
 
 ## UBC Student Email
 Please sign up for a UBC Student Email. This account will also grant you access to a range of UBC services, including Microsoft Teams and OneDrive. To do so navigate to [https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service](https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service) and follow the instructions under "Get Started". 
@@ -118,10 +114,22 @@ You may now customize your Terminal with themes by [following the directions her
 
 ### Installing
 
-The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can download and install the macOS version of VS Code from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download). Once the download is finished, click "Open with Archive utility", and move the extracted VS Code application from "Downloads" to "Applications".
-In addition to reading the [getting started instructions](https://code.visualstudio.com/docs/setup/mac), **be sure to follow the ["Launching from the command line"](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) steps as well.**
+The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis.
+You can download and install the macOS version of VS Code from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download).
+Once the download is finished, click "Open with Archive utility", and move the extracted VS Code application from "Downloads" to "Applications".
 
-You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
+### Launch from the Terminal (aka command line)
+
+1. Launch VS Code.
+2. Open the Command Palette (⇧⌘P ; shift+command+P).
+3. Type 'shell command' to find the "Shell Command: Install 'code' command in PATH" command.
+4. Hit Enter
+5. Restart the terminal for the new $PATH value to take effect. 
+
+You can open files in VS Code from the Terminal!
+Alternatively, just type `code .` in any folder to start editing files in that folder.
+
+You can test that VS Code is installed and can be opened from Terminal by restarting terminal and typing the following command in a Terminal:
 
 ```
 code --version
@@ -130,21 +138,39 @@ code --version
 you should see something like this if you were successful:
 
 ```
-1.45.1
-5763d909d5f12fe19f215cbfdd29a91c0fa9208a
+1.48.2
+a0479759d6e9ea56afa657e454193f72aef85bd0
 x64
 ```
 
-> Note: If you get an error message such as `-bash: code: command not found`, but you can see the VS Code application has been installed, then something went wrong with setting up the launch from the command line. Try following [these instructions](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) again, in particular you might want to try the described manual method of adding VS Code to your path.
+[Manual install instructions are here, but remember you're using the zsh now!](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) steps as well.
 
-## GitHub
+### VS Code extensions
 
-In MDS we will use the publicly available [GitHub.com](https://github.com/) as well as an Enterprise version of GitHub hosted here at UBC, [GitHub.ubc.ca](https://github.ubc.ca). Please follow the set-up instructions for both below.
+The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. Now that we have installed all our other Data Science tools, we can install the VS Code extensions that work really well with them. From within VS Code you can open up the [Extension Marketplace (read more here)](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
 
-### GitHub.com
+<img src="../imgs/VS Code.png" alt = ""/>
+
+To install an extension, you simply search for it in the search bar, click the extension you want, and then click "Install". There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:
+
+- Python (everything Python: notebooks, debugging, linting, formatting, etc.)
+- markdownlint (markdown linting and style checking extension)
+- GitLens - Git supercharged (powerful extension that extends VS Code's native git capabilities)
+- Docker (easily use Docker from VS Code)
+- (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
+- (Optional) Material Icon Theme (great-looking custom file icons!)
+- (Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})
+
+[This video tutorial](https://www.youtube.com/watch?v=06I63_p-2A4) is an excellent introduction to using VS Code in Python.
+
+
+## GitHub.com
+
+In MDS we will use the publicly available [GitHub.com](https://github.com/). Please follow the set-up instructions for both below.
 
 Sign up for a free account at [GitHub.com](https://github.com/) if you don't have one already.
 
+<!--
 ### GitHub.ubc.ca
 
 To add you to the MDS organization on [Github.ubc.ca](https://github.ubc.ca) we need you to login to [Github.ubc.ca](https://github.ubc.ca) using your CWL credentials.
@@ -153,6 +179,7 @@ This step is required for
 - being able to store your work
 - all homework submission and grading
 - working collaboratively
+-->
 
 ## Git
 
@@ -176,7 +203,7 @@ you should see something like this (does not have to be the exact same version) 
 git version 2.24.2 (Apple Git-127)
 ```
 
-> Note: If you run into trouble, please see that Install Git > Mac OS section from [Happy Git and GitHub for the useR](http://happygitwithr.com/install-git.html#mac-os) for additional help or strategies for Git installation.
+> Note: If you run into trouble, this is the time to post on Piazza with your error message and ask for help! You can also see the Install Git > Mac OS section from [Happy Git and GitHub for the useR](http://happygitwithr.com/install-git.html#mac-os) for additional help or strategies for Git installation.
 
 ### Configuring Git user info
 
@@ -191,13 +218,13 @@ git config --global user.email janedoe@example.com
 
 ### Setting VS Code as the default editor
 
-To make programs run from the terminal (such as `git`) use vscode by default, we will modify `~/.bash_profile`. First, open it using VS Code:
+To make programs run from the terminal (such as `git`) use VS Code by default, we will modify `~/.z_profile`. First, open it using VS Code:
 
 ```
-code ~/.bash_profile
+code ~/.z_profile
 ```
 
-> Note: If you see any existing lines in your `~/.bash_profile`
+> Note: If you see any existing lines in your `~/.z_profile`
 > related to a previous Python or R installation,
 > please remove these.
 
@@ -358,7 +385,7 @@ install.packages('IRkernel')
 
 Next, open a terminal and type the following
 (you can't use RStudio for this step
-since it doesn't honor `$PATH` changes in `~/.bash_profile`)
+since it doesn't honor `$PATH` changes in `~/.z_profile`)
 
 ```
 R -e "IRkernel::installspec()"
@@ -517,82 +544,6 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
-
-## VS Code extensions
-
-The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. Now that we have installed all our other Data Science tools, we can install the VS Code extensions that work really well with them. From within VS Code you can open up the [Extension Marketplace (read more here)](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
-
-<img src="../imgs/vscode.png" alt = ""/>
-
-To install an extension, you simply search for it in the search bar, click the extension you want, and then click "Install". There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:
-
-- Python (everything Python: notebooks, debugging, linting, formatting, etc.)
-- markdownlint (markdown linting and style checking extension)
-- GitLens - Git supercharged (powerful extension that extends VS Code's native git capabilities)
-- Docker (easily use Docker from VS Code)
-- (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
-- (Optional) Material Icon Theme (great-looking custom file icons!)
-- (Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})
-
-[This video tutorial](https://www.youtube.com/watch?v=06I63_p-2A4) is an excellent introduction to using VS Code in Python.
-
-## Improving the bash configuration
-
-To improve your experience using bash,
-we recommend appending a few lines to the end of your bash configuration file.
-This is optional,
-but makes it easier to use the TAB key for autocompletion
-and improves how bash handles the command history
-(we will talk more about these topics during class).
-It also adds colors to the terminal's text,
-which can make it easier to navigate visually.
-First,
-open the configuration file:
-
-```
-code ~/.bash_profile
-```
-
-Then paste the following at the end of the file
-(make sure not to overwrite any existing lines)
-and save it afterwards:
-
-```
-# Silence default shell note when launching bash
-export BASH_SILENCE_DEPRECATION_WARNING=1
-
-# Color text so it is easier to distinguish elements from each other
-export CLICOLOR=1
-export LSCOLORS=ExGxFxdxCxDxDxxbaDecac
-export PS1="${CONDA_PROMPT_MODIFIER}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
-
-# TAB completion configuration
-# TAB completion ignores case
-bind "set completion-ignore-case on"
-# Require only one instead of two TAB presses before showing matches
-bind "set show-all-if-ambiguous on"
-# Unfortunately the tab cycling does not work together with single tab match expansion on macOS
-# since bash is too old, so I have commented out the option below,
-# but feel free to remove the leading `#` if you want to test it out.
-# If there are multiple matches for completion, cycle through them with TAB
-# bind 'TAB':menu-complete
-
-# History configuration
-# Cycle through history based on characters already typed on the line
-bind '"\e[A":history-search-backward'
-bind '"\e[B":history-search-forward'
-# Append to the history file, don't overwrite it.
-shopt -s histappend
-# Write commands to history one-by-one right after they are executed
-# instead of all together when the terminal is closed.
-# Make new terminals see all commands run in currently open terminals and
-# prepend a newline to the prompt string to separate it from the last command's output
-PROMPT_COMMAND='history -a; echo'
-# Increase history size
-HISTSIZE=50000
-HISTFILESIZE=50000
-```
-
 ## Post-installation notes
 
 You have completed the installation instructions, well done 🙌!
