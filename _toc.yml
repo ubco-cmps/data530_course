@@ -31,7 +31,7 @@
     - file: class/topic2
       title: Lecture 2 - Topic
     - file: class/topic3
-    #   title: Lecture 3 - Topic
+       title: Lecture 3 - Topic
     # - file: class/topic4
     #   title: Lecture 4 - Topic
     # - file: class/topic5
