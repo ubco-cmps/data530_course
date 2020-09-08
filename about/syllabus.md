@@ -59,7 +59,7 @@ Any major changes to the syllabus (this page) will be documented here as well as
 | Team Member (Preferred pronouns) | Role       | Pronounce as     | Contact | Office Hour |
 |----------------------------------|------------|------------------|---------|-------------|
 | Dr. Firas Moosvi (he/his/him)    | Instructor | Fur-az Moose-vee | Slack   | TBD         |
-| Debangsha Sarkar ()              | TA         |                  | Slack   | TBD         |
+| Debangsha Sarkar (he/his/him)    | TA         | De-bangsh        | Slack   | NA          |
 
 (grading_practices)=
 ## How will I be evaluated in this course?
