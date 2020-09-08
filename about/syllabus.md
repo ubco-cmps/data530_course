@@ -38,40 +38,40 @@ I invite you to be co-contributors to this syllabus, and use the tools provided 
 Any major changes to the syllabus (this page) will be documented here as well as the date the change was made. 
 
 | Change Date | Summary | Rationale |
-|-------------|----------------|-----------|
-| TBD         | TBD            | TBD       |
+|-------------|---------|-----------|
+| TBD         | TBD     | TBD       |
 
 ## About this course
 
-| Name                | Description                                                                                    |
-|---------------------|------------------------------------------------------------------------------------------------|
-| Course              | DATA 530                                                                                       |
-| Term                | 2020/21 Winter Term 1                                                                          |
-| Lectures            | Online [Monday and Wednesday 9:30 - 11:00](https://ubc.zoom.us)                                |
-| Laboratory          | Wednesday 12:30 - 15:30                                                                        |
-| URL                 | https://firas.moosvi.com/courses/data530                                                       |
-| Instructor          | Firas Moosvi                                                                                   |
-| Office              | [Zoom](https://ubc.zoom.us)                                                                    |
-| Contact             | Via Slack in the course channel                                                                |
+| Name       | Description                                                     |
+|------------|-----------------------------------------------------------------|
+| Course     | DATA 530                                                        |
+| Term       | 2020/21 Winter Term 1                                           |
+| Lectures   | Online [Monday and Wednesday 9:30 - 11:00](https://ubc.zoom.us) |
+| Laboratory | Wednesday 12:30 - 15:30                                         |
+| URL        | https://firas.moosvi.com/courses/data530                        |
+| Instructor | Firas Moosvi                                                    |
+| Office     | [Zoom](https://ubc.zoom.us)                                     |
+| Contact    | Via Slack in the course channel                                 |
 
 ## Contact the Teaching Team
 
-| Team Member                               | Pronounce as     | Contact | Office Hour |
-|-------------------------------------------|------------------|---------|-------------|
-| Dr. Firas Moosvi (he/his/him); Instructor | Fur-az Moose-vee | Slack   | TBD         |
-| Debangsha Sarkar (); TA                   |                  | Slack   | TBD         |
+| Team Member (Preferred pronouns) | Role       | Pronounce as     | Contact | Office Hour |
+|----------------------------------|------------|------------------|---------|-------------|
+| Dr. Firas Moosvi (he/his/him)    | Instructor | Fur-az Moose-vee | Slack   | TBD         |
+| Debangsha Sarkar ()              | TA         |                  | Slack   | TBD         |
 
 (grading_practices)=
 ## How will I be evaluated in this course?
 
 The grading scheme for this course is here:
 
-| Item                  | Weight         | Due date(s) |
-|-----------------------|----------------|-------------|
-| Clickers              | 10%            | Every class |
-| Labs                  | 40% (4 x 10%)  | Wednesdays at 6 PM  |
-| Quiz 1                | 25%            | Sept 30, 2020  |
-| Quiz 2                | 25%            | Oct 7, 2020  |
+| Item     | Weight        | Due date(s)        |
+|----------|---------------|--------------------|
+| Clickers | 10%           | Every class        |
+| Labs     | 40% (4 x 10%) | Wednesdays at 6 PM |
+| Quiz 1   | 25%           | Sept 30, 2020      |
+| Quiz 2   | 25%           | Oct 7, 2020        |
 
 ```{attention} 
 All deadlines in this course (except Quizzes) have an automatic 48 hour grace period after the due dates listed above.
