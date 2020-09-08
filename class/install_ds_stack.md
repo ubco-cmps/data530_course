@@ -2,27 +2,12 @@
 Install the Data Science Stack
 =======================
 
-General introductory notes about Part 2.
+```{important} 
+This guide has been (lightly) adapted from the UBC-Vancouver [MDS Install stack](https://ubc-mds.github.io/resources_pages/installation_instructions/) under a CC-BY-SA 4.0 license.
+```
 
-## Checklist for things to do in this part
+Below are links to the software installation guide used for the MDS program for the three operating systems we support. We provide these installation instructions to our students on the first day of the program. Original version written by [Anmol Jawandha](https://github.com/Anmol6), updated version by Tomas Beuzen, Rodolfo Lourenzutti, Joel Ostblom & Tiffany Timbers.
 
-Thanks to the code in the directory `_static/save_state.js`, a web storage object will be created on each browser locally so students can come back to the same page and update the checkboxes. 
-Note that this will NOT work across browsers, across devices, likely will not work in privacy/incognito browsing mode, and definitly will not work if you clear/reset your cache and temporary files.
-Use at your own risk (and [open an issue here](https://github.com/firasm/jupyterbook_course_template/issues) with your experience!)
-
-
-<label><input type="checkbox" id="box-7" class="box"> Complete Homework 4 </input></label>
-
-<label><input type="checkbox" id="box-8" class="box"> Complete Test 4 </input></label>
-
-<label><input type="checkbox" id="box-9" class="box"> Complete Learning Log 4 </input></label>
-
-<label><input type="checkbox" id="box-10" class="box"> Complete Homework 5 </input></label>
-
-<label><input type="checkbox" id="box-11" class="box"> Complete Test 5 </input></label>
-
-<label><input type="checkbox" id="box-12" class="box"> Complete Learning Log 5 </input></label>
-
-## Section2
-
-Some other information can go here
+- [macOS](install_ds_stack_mac.md)
+- [Ubuntu](install_ds_stack_ubuntu.md)
+- [Windows](install_ds_stack_windows.md)
