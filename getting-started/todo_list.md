@@ -17,7 +17,7 @@ How should you annotate the syllabus? Well there's a really awesome tool called 
 
 Here's what you need to do:
 
-First click this link and Sign Up for Hypothes.is when it asks you to log in: [https://hypothes.is/groups/vB39EeGD/data301-students](https://hypothes.is/groups/q9RpwxVd/mds-2020-21).
+First click this link and Sign Up for Hypothes.is when it asks you to log in: [https://hypothes.is/groups/q9RpwxVd/mds-2020-21](https://hypothes.is/groups/q9RpwxVd/mds-2020-21).
 
 *The Hypothes.is tool is stored on servers outside Canada. Please exercise caution whenever using personal information. If you would like to protect your identity, you may create an alternate email address and provide an alias/pseudonym rather than your real name and personal information.*
 
