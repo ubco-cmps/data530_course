@@ -70,8 +70,8 @@ The grading scheme for this course is here:
 |-----------------------|----------------|-------------|
 | Clickers              | 10%            | Every class |
 | Labs                  | 40% (4 x 10%)  | Wednesdays at 6 PM  |
-| Quiz 1                | 25%            | Sept X, 2020  |
-| Quiz 2                | 25%            | Sept X, 2020  |
+| Quiz 1                | 25%            | Sept 30, 2020  |
+| Quiz 2                | 25%            | Oct 7, 2020  |
 
 ```{attention} 
 All deadlines in this course (except Quizzes) have an automatic 48 hour grace period after the due dates listed above.
