@@ -45,8 +45,10 @@
 
 - part: Labs
   chapters:
-    - file: class/labs
-      title: Lab 1 (Coming soon)
+    - file: labs/intro
+      title: Introduction
+    - file: labs/lab1
+      title: Lab 1 - DS Stack
 
 # - part: Quiz Preparation
 #   chapters:
