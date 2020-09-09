@@ -340,7 +340,7 @@ To test that your JupyterLab installation is functional, you can type `jupyter l
 To exit out of JupyterLab you can click `File -> Shutdown`,
 or go to the terminal from which you launched JupyterLab and hold `Ctrl` while pressing `c` twice.
 
-<img src="../images/jupyter_lab.png" alt = ""/>
+<img src="../images/jupyter_lab.PNG" alt = ""/>
 
 ## R, IRkernel, Rtools, and RStudio
 
