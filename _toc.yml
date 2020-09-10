@@ -27,7 +27,7 @@
 - part: Lectures
   chapters:
     - file: class/Lecture1
-      title: Lecture 1 - Topic
+      title: Lecture 1 - Platforms
     # - file: class/topic2
     #   title: Lecture 2 - Topic
     # - file: class/topic3
@@ -46,7 +46,7 @@
 - part: Labs
   chapters:
     - file: labs/intro
-      title: Introduction
+      title: Start here!
     - file: labs/lab1
       title: Lab 1 - DS Stack
 
