@@ -39,7 +39,7 @@ Any major changes to the syllabus (this page) will be documented here as well as
 
 | Change Date | Summary | Rationale |
 |-------------|---------|-----------|
-| TBD         | TBD     | TBD       |
+| September 14, 2020         | Update passing requirement     | The requirement is to get 68% or higher in the overall course; there is no requirement for each quiz score to be over 60%.       |
 
 ## About this course
 
@@ -82,8 +82,7 @@ Any submissions submitted past the grace period will not be graded.
 
 Yes. To pass this course, you must:
 
-- Achieve at least 60% in both quizzes (separately).
-- Achieve an average of at least 60% across all labs
+- Achieve at least 68% in the overall course.
 
 ## Course Learning Outcomes (AKA what will I learn in this course?)
 
