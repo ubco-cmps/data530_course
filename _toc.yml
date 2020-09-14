@@ -28,9 +28,9 @@
   chapters:
     - file: class/Lecture1
       title: Lecture 1 - Platforms
-     - file: class/topic2
-       title: Lecture 2 - Command Line and Stack
-     - file: class/Lecture2
+    - file: class/Lecture2
+      title: Lecture 2 - Command Line and Stack
+    # - file: class/Lecture2
     #   title: Lecture 3 - Topic
     # - file: class/topic4
     #   title: Lecture 4 - Topic
