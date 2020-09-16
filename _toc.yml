@@ -30,8 +30,8 @@
       title: Lecture 1 - Platforms
     - file: class/Lecture2
       title: Lecture 2 - Command Line and Stack
-    # - file: class/Lecture2
-    #   title: Lecture 3 - Topic
+    - file: class/Lecture3
+      title: Lecture 3 - Introduction to Excel
     # - file: class/topic4
     #   title: Lecture 4 - Topic
     # - file: class/topic5
@@ -49,6 +49,8 @@
       title: Start here!
     - file: labs/lab1
       title: Lab 1 - DS Stack
+    - file: labs/lab2
+      title: Lab 2 - Introduction to Excel
 
 # - part: Quiz Preparation
 #   chapters:
