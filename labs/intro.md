@@ -9,7 +9,7 @@ Once the lab is ready for you to accept, click the below to accept the lab:
 | Lab                          | Due Date                            | Link to Accept                                        |
 |------------------------------|-------------------------------------|-------------------------------------------------------|
 | [Lab 1 - Install the DS Stack](lab1) | Wed September 16 at 18:00           | [Accept Lab](https://classroom.github.com/a/awEYuZTH) |
-| Lab 2 - TBD                  | Wed September 23 at 18:00           | []()                                        |
+| [Lab 2 - Excel Formulas and Functions](lab2) | Wed September 23 at 18:00           | [Accept Lab](https://classroom.github.com/a/yo3uBbEL)                                        |
 | Lab 3 - TBD                  | Wed September 30 at 18:00           | []()                                        |
 | Lab 4 - TBD                  | Wed October 7 at 18:00              | []()                                        |
 
