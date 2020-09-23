@@ -23,5 +23,5 @@ This will mostly be demos and I hope this is very interactive and you ask lots o
 4. GitHub and GitHub Pages (20 minutes)
 
     - GitHub Pages
-    - Deploy your own website
+    - [Deploy your own website](https://github.com/firasm/hugo_template)
     - GitHub actions
