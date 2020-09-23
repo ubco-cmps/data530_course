@@ -8,7 +8,7 @@ Course Schedule
 | 2       | Monday September 14    | Data Formats                                                      | Lecture 2 |
 | 3       | Wednesday September 16 | Introduction to Excel                                             | Lecture 3 |
 | 4       | Monday September 21    | Excel Data Analysis                                               | Lecture 4 |
-| 5       | Wednesday September 23 | Excel Macros and Automation                                       | Lecture 5 |
+| 5       | Wednesday September 23 | Jupyter Lab, VS Code, GitHub Pages                                | Lecture 5 |
 | 6       | Monday September 28    | Online Services                                                   | Lecture 6 |
 | 7       | Wednesday September 30 | Quiz 1                                                            | Lecture 7 |
 | 8       | Monday October 5       | Debugging                                                         | Lecture 8 |
@@ -58,16 +58,12 @@ Course Schedule
 	- use and create pivot tables and charts	
 	- use the Analysis ToolPak including computing a regression
 	
-5. Excel Macros and Automation
-	- list some reasons to use Excel VBA
-	- define macro and explain the benefit of using macros
-	- be able to record and execute a macro
-	- explain the security issues with macros and how Excel deals with them
-	- list and explain the use of the four main windows of the Visual Basic Editor
-	- explain the role of the object browser
-	- use the Range object to select a group of cells
-	- create user-defined functions and use them in formulas
-	- understand that Excel structures everything as objects with methods and properties
+5. Interactive Session: Jupyter Lab, VS Code, and GitHub pages
+	- explain how/what jupyter lab and jupyter notebooks work
+	- explore the Jupyter Lab interface and ecosystem
+	- discuss what `nbconvert` is and does
+	- discuss workflows with VS Code
+	- deploy your own personal website (if time permits)
 		
 6. Online Services
 	- explain motivation for a data analyst to use cloud services for their work.
@@ -77,14 +73,12 @@ Course Schedule
 	- list some trade-offs of using cloud services versus building using in-house tools such as R and Python
 	- explain the role of Google Analytics and Google AdWords. Compare and contrast what these two services provide.
 
-7. Libraries, Documentation, and Help
-	- understand different resources and techniques for getting help in R and Python.
-	- read and apply standard documentation for R and Python.
-	- understand the importance of using libraries to improve code development efficiency and reliability.
-	- practice finding a library, reading its documentation, and applying its methods to solve a problem.
-
-8. Debugging
+7. Debugging, Libraries, Documentation, and Help
 	- define: debugging
 	- list and explain the 4 key steps of debugging.
 	- list and identify three types of program errors: syntax errors, logic errors, and exceptions.
 	- be able to debug Python and R code.
+	- understand different resources and techniques for getting help in R and Python.
+	- read and apply standard documentation for R and Python.
+	- understand the importance of using libraries to improve code development efficiency and reliability.
+	- practice finding a library, reading its documentation, and applying its methods to solve a problem.
