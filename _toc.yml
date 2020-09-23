@@ -52,7 +52,8 @@
       title: Lab 1 - DS Stack
     - file: labs/lab2
       title: Lab 2 - Introduction to Excel
-
+    - file: labs/lab3
+      title: Lab 3 - Advanced Excel
 # - part: Quiz Preparation
 #   chapters:
 #     - file: quiz1_prep
