@@ -34,8 +34,8 @@
       title: Lecture 3 - Introduction to Excel
     - file: class/Lecture4
       title: Lecture 4 - Data analysis with Excel
-    - file: class/topic5
-      title: Lecture 5 - Topic
+    - file: class/Lecture5
+      title: Lecture 5 - Jupyter Lab, VS Code, GitHub Pages 
     # - file: class/topic6
     #   title: Lecture 6 - Topic
     # - file: class/topic7
