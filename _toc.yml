@@ -52,6 +52,8 @@
       title: Lab 2 - Introduction to Excel
     - file: labs/lab3
       title: Lab 3 - Advanced Excel
+    - file: labs/lab4
+      title: Lab 4 - Debugging and Terminal
 # - part: Quiz Preparation
 #   chapters:
 #     - file: quiz1_prep
