@@ -38,9 +38,8 @@
       title: Lecture 5 - Jupyter Lab, VS Code, GitHub Pages 
     - file: class/Lecture6
       title: Lecture 6 - Online Services
-    #   title: Lecture 7 - Topic
-    # - file: class/topic8
-    #   title: Lecture 8 - Topic
+    - file: class/Lecture7
+      title: Lecture 7 - Debugging and Help
 
 - part: Labs
   chapters:
