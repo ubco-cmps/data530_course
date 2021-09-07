@@ -43,10 +43,10 @@ jobs:
     # Push to server
     - name: rsync and ssh
       env:
-        REMOTE_HOST: ${{ secrets.REMOTE_HOST_UBCO }}
-        REMOTE_USER: ${{ secrets.REMOTE_USER_UBCO }}
+        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+        REMOTE_USER: ${{ secrets.REMOTE_USER }}
         REMOTE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-        REMOTE_DIR: ${{ secrets.REMOTE_TARGET_UBCO }}
+        REMOTE_DIR: ${{ secrets.REMOTE_TARGET }}
         LOCAL_DIR: "_build/html/"
         COURSE_NAME: "data530"
         TERM: "2021_WT1"
