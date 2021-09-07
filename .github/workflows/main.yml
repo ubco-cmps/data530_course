@@ -43,7 +43,7 @@ jobs:
         COURSE_NAME: "data530"
         TERM: "2021_WT1"
       run: |
-        # mkdir ~/.ssh
+        mkdir ~/.ssh
         echo "$REMOTE_KEY" > ~/.ssh/id_rsa
         ssh-keyscan -H $REMOTE_HOST >> ~/.ssh/known_hosts
         chmod 600 ~/.ssh/id_rsa
