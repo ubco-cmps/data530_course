@@ -17,7 +17,7 @@ html:
   baseurl : "https://firas.moosvi.com/courses/data530/"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   # google_analytics_id: UA-11111111 # add your Google Analytics Tracking Code
   comments:
-    hypothesis: true
+    hypothesis: false
     utterances:
       repo: "ubco-cmps/data530_course"
   extra_footer : |
@@ -34,12 +34,17 @@ launch_buttons:
 repository: 
   url          : https://github.com/ubco-cmps/data530_course/
   path_to_book : ""
-  branch       : master
+  branch       : main
 
 sphinx:
   config:
     html_show_copyright: false
     html_extra_path: ['files']
-
-parse:
-  myst_extended_syntax: true
+    myst_enable_extensions: 
+    - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_image
+    - linkify
+    - substitution
