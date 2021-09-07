@@ -50,7 +50,8 @@ jobs:
         LOCAL_DIR: "_build/html/"
         COURSE_NAME: "data530"
         TERM: "2021_WT1"
-        
+      run: |
+        mkdir ~/.ssh        
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
       
