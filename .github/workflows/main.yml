@@ -51,15 +51,13 @@ jobs:
         COURSE_NAME: "data530"
         TERM: "2021_WT1"
       run: |
-        mkdir ~/.ssh        
-    - name: Setup tmate session
-      uses: mxschmitt/action-tmate@v3
-      
-#       run: |
-#         mkdir ~/.ssh
-#         echo "$REMOTE_KEY" > ~/.ssh/id_rsa
-#         ssh-keyscan -H $REMOTE_HOST >> ~/.ssh/known_hosts
-#         chmod 600 ~/.ssh/id_rsa
-#         pwd
-#         ls -la
-#         rsync -avzr --delete $LOCAL_DIR $REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR/courses/$TERM/$COURSE_NAME
+        # mkdir ~/.ssh
+        echo "$REMOTE_KEY" > ~/.ssh/id_rsa
+        ssh-keyscan -H $REMOTE_HOST >> ~/.ssh/known_hosts
+        chmod 600 ~/.ssh/id_rsa
+        pwd
+        ls -la
+        rsync -avzr --delete $LOCAL_DIR $REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR/courses/$TERM/$COURSE_NAME
+
+#     - name: Setup tmate session
+#       uses: mxschmitt/action-tmate@v3
