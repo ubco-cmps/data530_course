@@ -31,9 +31,6 @@ jobs:
     - name: Build the book
       run: |
         jupyter-book build .
-        
-    - name: Setup tmate session
-      uses: mxschmitt/action-tmate@v3
       
     # Push to server
     - name: rsync and ssh
