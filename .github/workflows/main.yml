@@ -14,10 +14,16 @@ jobs:
     - uses: actions/checkout@v2
 
     # Install dependencies
-    - name: Set up Python 3.7
+    - name: Set up Python 3.9
       uses: actions/setup-python@v1
       with:
-        python-version: 3.7
+        python-version: 3.9
+        
+    - name: cache installation
+      uses: actions/cache@v2
+      with:
+        path: ${{ env.pythonLocation }}
+        key: ${{ env.pythonLocation }}-${{ hashFiles('setup.py') }}-${{ hashFiles('requirements.txt') }}
 
     - name: Install dependencies
       run: |
@@ -30,8 +36,8 @@ jobs:
     # Push to server
     - name: rsync and ssh
       env:
-        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-        REMOTE_USER: ${{ secrets.REMOTE_USER }}
+        REMOTE_HOST: ${{ secrets.REMOTE_HOST_UBCO }}
+        REMOTE_USER: ${{ secrets.REMOTE_USER_UBCO }}
         REMOTE_KEY: ${{ secrets.SERVER_SSH_KEY }}
         REMOTE_DIR: ${{ secrets.REMOTE_TARGET_UBCO }}
         LOCAL_DIR: "_build/html/"
