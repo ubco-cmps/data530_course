@@ -1,5 +1,5 @@
 # Book settings
-title: DATA 530
+title: Data 530
 author: Firas Moosvi
 logo: images/logo.jpg
 copyright: ""
@@ -14,12 +14,12 @@ html:
   use_issues_button: true
   use_edit_page_button: true
   navbar_number_sections : false
-  baseurl : "https://firas.moosvi.com/courses/data530/"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
+  baseurl : "https://firas.moosvi.com/courses/2021_WT1/data530/"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   # google_analytics_id: UA-11111111 # add your Google Analytics Tracking Code
   comments:
-    hypothesis: true
+    hypothesis: false
     utterances:
-      repo: "ubco-cmps/data530_course"
+      repo: "ubco-cmps/mds_course_template"
   extra_footer : |
       <div>
       <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
@@ -32,14 +32,51 @@ launch_buttons:
   thebe              : true
 
 repository: 
-  url          : https://github.com/ubco-cmps/data530_course/
+  url          : https://github.com/ubco-mds-2021/data530
   path_to_book : ""
-  branch       : master
+  branch       : main
 
 sphinx:
   config:
     html_show_copyright: false
     html_extra_path: ['files']
-
-parse:
-  myst_extended_syntax: true
+    bibtex_reference_style: author_year
+    myst_enable_extensions: 
+    - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_image
+    - linkify
+    - substitution
+    myst_substitutions:
+      INSTRUCTOR: "Dr. Firas Moosvi (he/his/him)"
+      TA: "Jack Black"
+      PRONOUNCE: "[Fur-az Moose-vee](https://namedrop.io/firasmoosvi)"
+      OFFICE: "SCI 393"
+      PHONE: "N/A"
+      COURSE_CODE: "DATA 530"
+      SECTION: "001"
+      CREDITS: "1"
+      TITLE: "Computing Platforms for Data Science"
+      PREREQS: "N/A"
+      COREQS: "N/A"
+      TERM: "2021 Winter Term 1"
+      ROOM: "Online Via Zoom"
+      MEETING_TIMES: "Monday, Wednesday from 9:30 - 11:00 AM"
+      GRACE_PERIOD: "48 hour"
+      # W_DATE_1: "11:59 PDT on September 20, 2021"
+      # W_DATE_2: "11:59 PDT on November 12, 2021"
+      # W_DATE_3: "November 12, 2021"
+      # EXAM_PERIOD: "Saturday December 11th - Wednesday, December 22"
+      CANVAS_ID: "81269"
+      CANVAS_LINK: "https://canvas.ubc.ca/courses/CANVAS_ID" # {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID)) }}
+      ZOOM_LINK: "[Zoom](https://canvas.ubc.ca/courses/CANVAS_ID/external_tools/15408)"
+      ANNOUNCEMENTS_LINK: "[Announcements](https://canvas.ubc.ca/courses/CANVAS_ID/announcements)"
+      COURSE_LINK: "https://firas.moosvi.com/courses/2021_WT1/data530"
+      FORUM_LINK: "Slack"
+      FORUM_LINK: "[Slack](https://join.slack.com/t/ubcomds2021/shared_invite/zt-vdpj5z3q-Yo5FFNfW7fOXGHh7Ib4pNg)"
+      ANALYTICS_OPTOUT: "[complete this form](https://ubc.ca1.qualtrics.com/jfe/form/SV_0p6lP4TtNpJn410)"
+      FORMAT: "Lectures, Labs, Tutorials will all be running online in this course."
+      ASSOCIATE_HEAD: "Jeff Andrews [jeff.andrews@ubc.ca](mailto:jeff.andrews@ubc.ca) or Khalad Hasan [khalad.hasan@ubc.ca](mailto:khalad.hasan@ubc.ca)"
+      ANON_FEEDBACK: "[feedback form](https://ubc.ca1.qualtrics.com/jfe/form/SV_cI0jyldTtcTiSFM)"

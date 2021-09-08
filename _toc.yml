@@ -4,47 +4,50 @@ parts:
 - caption: About this course
   chapters:
   - file: about/course_schedule
-- caption: Getting started!
-  chapters:
-  - file: getting-started/todo_list
-    title: Things to do before start of course
-  - file: class/install_ds_stack
-    sections:
-    - file: class/install_ds_stack_mac
-      title: "\u2756 macOS"
-    - file: class/install_ds_stack_ubuntu
-      title: "\u2756 Ubuntu"
-    - file: class/install_ds_stack_windows
-      title: "\u2756 Windows"
+
+# - caption: Getting started!
+#   chapters:
+#   - file: getting-started/todo_list
+#     title: Things to do before start of course
+#   - file: class/install_ds_stack
+#     sections:
+#     - file: class/install_ds_stack_mac
+#       title: "\u2756 macOS"
+#     - file: class/install_ds_stack_ubuntu
+#       title: "\u2756 Ubuntu"
+#     - file: class/install_ds_stack_windows
+#       title: "\u2756 Windows"
+
+# - caption: Lectures
+#   chapters:
+#   - file: class/Lecture1
+#     title: Lecture 1 - Platforms
+#   - file: class/Lecture2
+#     title: Lecture 2 - Command Line and Stack
+#   - file: class/Lecture3
+#     title: Lecture 3 - Introduction to Excel
+#   - file: class/Lecture4
+#     title: Lecture 4 - Data analysis with Excel
+#   - file: class/Lecture5
+#     title: Lecture 5 - Jupyter Lab, VS Code, GitHub Pages
+#   - file: class/Lecture6
+#     title: Lecture 6 - Online Services
+#   - file: class/Lecture7
+#     title: Lecture 7 - Debugging and Help
+# - caption: Labs
+#   chapters:
+#   - file: labs/intro
+#     title: Start here!
+#   - file: labs/lab1
+#     title: Lab 1 - DS Stack
+#   - file: labs/lab2
+#     title: Lab 2 - Introduction to Excel
+#   - file: labs/lab3
+#     title: Lab 3 - Advanced Excel
+#   - file: labs/lab4
+#     title: Lab 4 - Debugging and Terminal
+
 - caption: Course Feedback
   chapters:
   - file: about/feedback
     title: Anonymous Feedback Form
-- caption: Lectures
-  chapters:
-  - file: class/Lecture1
-    title: Lecture 1 - Platforms
-  - file: class/Lecture2
-    title: Lecture 2 - Command Line and Stack
-  - file: class/Lecture3
-    title: Lecture 3 - Introduction to Excel
-  - file: class/Lecture4
-    title: Lecture 4 - Data analysis with Excel
-  - file: class/Lecture5
-    title: Lecture 5 - Jupyter Lab, VS Code, GitHub Pages
-  - file: class/Lecture6
-    title: Lecture 6 - Online Services
-  - file: class/Lecture7
-    title: Lecture 7 - Debugging and Help
-- caption: Labs
-  chapters:
-  - file: labs/intro
-    title: Start here!
-  - file: labs/lab1
-    title: Lab 1 - DS Stack
-  - file: labs/lab2
-    title: Lab 2 - Introduction to Excel
-  - file: labs/lab3
-    title: Lab 3 - Advanced Excel
-  - file: labs/lab4
-    title: Lab 4 - Debugging and Terminal
