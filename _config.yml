@@ -64,6 +64,7 @@ sphinx:
       TERM: "2021 Winter Term 1"
       ROOM: "Online Via Zoom"
       MEETING_TIMES: "Monday, Wednesday from 9:30 - 11:00 AM"
+      LAB_TIMES: ""
       GRACE_PERIOD: "48 hour"
       # W_DATE_1: "11:59 PDT on September 20, 2021"
       # W_DATE_2: "11:59 PDT on November 12, 2021"
