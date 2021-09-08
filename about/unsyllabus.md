@@ -54,10 +54,12 @@ A few other notes:
 - You are encouraged to post questions publicly whenever possible so others can benefit. For private and personal issues, you can send private messages on {{ FORUM_LINK }}.
 - Any student may visit the student hour for any member of the teaching team (TA or instructor)! In other words, you can go to the student hour of ANY TA, not just the one whose lab/tutorial you are registered in. 
 
+<!--
 ### Why should I take {{ COURSE_CODE }}?
 
 ```{include} syllabus_bits/course_teaser.md
 ```
+-->
 
 ## Unsyllabus changes
 
