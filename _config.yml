@@ -51,7 +51,7 @@ sphinx:
     - substitution
     myst_substitutions:
       INSTRUCTOR: "Dr. Firas Moosvi (he/his/him)"
-      TA: "Jack Black"
+      TA: "Corey Bond"
       PRONOUNCE: "[Fur-az Moose-vee](https://namedrop.io/firasmoosvi)"
       OFFICE: "SCI 393"
       PHONE: "N/A"
