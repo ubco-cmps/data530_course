@@ -1,5 +1,5 @@
 (page_install_ds_stack_windows)=
-Windows Software Stack
+Windows Software Stack Part 1
 =======================
 
 These instructions will walk you through installing the required Data Science software stack for {{ COURSE_CODE }}. 

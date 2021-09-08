@@ -19,9 +19,11 @@ parts:
     - file: setup/install_ds_stack_mac2
       title: "\u2756 macOS (Part 2)"
     - file: setup/install_ds_stack_ubuntu_part1
-      title: "\u2756 Ubuntu (Part 1)"
+      title: "\u2756 Ubuntu"
     - file: setup/install_ds_stack_windows
       title: "\u2756 Windows (Part 1)"
+    - file: setup/install_ds_stack_windows2
+      title: "\u2756 Windows (Part 2)"
 
 # - caption: Lectures
 #   chapters:
