@@ -1,10 +1,11 @@
 The grading scheme for this course is:
 
-| Item   | Weight | Frequency           |
-|--------|--------|---------------------|
-| Labs   | 60%    | Weekly              |
-| Quiz 1 | 20%    | Once on October 4th |
-| Quiz 2 | 20%    | Once on October 6th |
+| Item          | Weight | Frequency           |
+|---------------|--------|---------------------|
+| Learning Logs | 10%    | Weekly on Fridays   |
+| Labs          | 50%    | Weekly on Tuesdays  |
+| Quiz 1        | 20%    | Once on October 4th |
+| Quiz 2        | 20%    | Once on October 6th |
 
 
 ```{attention} 

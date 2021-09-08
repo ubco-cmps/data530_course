@@ -1,8 +1,9 @@
-| Item   | Weight | Frequency |
-|--------|--------|-----------|
-| Labs   | 60%    | Weekly    |
-| Quiz 1 | 20%    | Once      |
-| Quiz 2 | 20%    | Once      |
+| Item          | Weight | Frequency |
+|---------------|--------|-----------|
+| Learning Logs | 10%    | Weekly    |
+| Labs          | 50%    | Weekly    |
+| Quiz 1        | 20%    | Once      |
+| Quiz 2        | 20%    | Once      |
 
 Final grades will be based on the evaluations listed above and the final grade will be assigned according to the standardized grading system outlined in the [UBC Okanagan Calendar](http://okanagan.students.ubc.ca/calendar/).
 
