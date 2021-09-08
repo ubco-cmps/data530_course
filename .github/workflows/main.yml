@@ -12,12 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-
     # Install dependencies
-    - name: Set up Python 3.9
+    - name: Set up Python 3.8
       uses: actions/setup-python@v1
       with:
-        python-version: 3.9
+        python-version: 3.8
         
     - name: cache installation
       uses: actions/cache@v2
@@ -32,14 +31,14 @@ jobs:
     - name: Build the book
       run: |
         jupyter-book build .
-        
+      
     # Push to server
     - name: rsync and ssh
       env:
-        REMOTE_HOST: ${{ secrets.REMOTE_HOST_UBCO }}
-        REMOTE_USER: ${{ secrets.REMOTE_USER_UBCO }}
+        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+        REMOTE_USER: ${{ secrets.REMOTE_USER }}
         REMOTE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-        REMOTE_DIR: ${{ secrets.REMOTE_TARGET_UBCO }}
+        REMOTE_DIR: ${{ secrets.REMOTE_TARGET }}
         LOCAL_DIR: "_build/html/"
         COURSE_NAME: "data530"
         TERM: "2021_WT1"
@@ -51,3 +50,6 @@ jobs:
         pwd
         ls -la
         rsync -avzr --delete $LOCAL_DIR $REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR/courses/$TERM/$COURSE_NAME
+
+#     - name: Setup tmate session
+#       uses: mxschmitt/action-tmate@v3
