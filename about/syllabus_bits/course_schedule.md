@@ -1,24 +1,17 @@
-(page_Course_Schedule)=
-Course Schedule
-=======================
+## Schedule
+| Class # | Date                   | Course Topics                    |
+|---------|------------------------|----------------------------------|
+| 1       | Wednesday September 8  | Course and Platform Introduction |
+| 2       | Monday September 13    | Data Formats                     |
+| 3       | Wednesday September 15 | Introduction to Excel            |
+| 4       | Monday September 20    | Excel Data Analysis              |
+| 5       | Wednesday September 22 | Excel Macros and Automation      |
+| 6       | Monday September 27    | Online Services                  |
+| 7       | Wednesday September 29 | Debugging                        |
+| 8       | Monday October 4       | Quiz 1 - Timed, online           |
+| 9       | Wednesday October 6    | Quiz 2 - Take-home               |
 
-| Class # | Date                   | Course Topics                                                     | Readings  |
-| ------- | ---------------------- | ----------------------------------------------------------------- | --------- |
-| 1       | Wednesday September 9  | Course and Platform Introduction                                  | Lecture 1 |
-| 2       | Monday September 14    | Data Formats                                                      | Lecture 2 |
-| 3       | Wednesday September 16 | Introduction to Excel                                             | Lecture 3 |
-| 4       | Monday September 21    | Excel Data Analysis                                               | Lecture 4 |
-| 5       | Wednesday September 23 | Jupyter Lab, VS Code, GitHub Pages                                | Lecture 5 |
-| 6       | Monday September 28    | Online Services                                                   | Lecture 6 |
-| 7       | Wednesday September 30 | Quiz 1                                                            | Lecture 7 |
-| 8       | Monday October 5       | Debugging                                                         | Lecture 8 |
-| 9       | Wednesday October 7    | Quiz 2                                                            | Lecture 9 |
-
-```{note}
-Data 530 Labs are on Tuesdays. To help students in other time zones, we use two time slots for the labs: 8:30 am - 9:30 am and 13:30 pm - 15:30 pm. In later blocks as more of us transition to face-to-face, the morning slot may be deprecated. TAs will be using Zoom for the labs.
-```
-
-## Lecture Learning Outcomes
+## Course Learning Outcomes
 
 1. Course and Platform Introduction
 	- understand MDS structure and goals
@@ -62,12 +55,16 @@ Data 530 Labs are on Tuesdays. To help students in other time zones, we use two 
 	- use and create pivot tables and charts	
 	- use the Analysis ToolPak including computing a regression
 	
-5. Interactive Session: Jupyter Lab, VS Code, and GitHub pages
-	- explain how/what jupyter lab and jupyter notebooks work
-	- explore the Jupyter Lab interface and ecosystem
-	- discuss what `nbconvert` is and does
-	- discuss workflows with VS Code
-	- deploy your own personal website (if time permits)
+5. Excel Macros and Automation
+	- list some reasons to use Excel VBA
+	- define macro and explain the benefit of using macros
+	- be able to record and execute a macro
+	- explain the security issues with macros and how Excel deals with them
+	- list and explain the use of the four main windows of the Visual Basic Editor
+	- explain the role of the object browser
+	- use the Range object to select a group of cells
+	- create user-defined functions and use them in formulas
+	- understand that Excel structures everything as objects with methods and properties
 		
 6. Online Services
 	- explain motivation for a data analyst to use cloud services for their work.
@@ -77,7 +74,7 @@ Data 530 Labs are on Tuesdays. To help students in other time zones, we use two 
 	- list some trade-offs of using cloud services versus building using in-house tools such as R and Python
 	- explain the role of Google Analytics and Google AdWords. Compare and contrast what these two services provide.
 
-7. Debugging, Libraries, Documentation, and Help
+7. Debugging, Libraries, and Documentation
 	- define: debugging
 	- list and explain the 4 key steps of debugging.
 	- list and identify three types of program errors: syntax errors, logic errors, and exceptions.
