@@ -8,18 +8,18 @@ parts:
     title: Course Schedule and Learning Outcomes
   - file: about/accommodations
   
-# - caption: Getting started!
-#   chapters:
-#   - file: getting-started/todo_list
-#     title: Things to do before start of course
-#   - file: class/install_ds_stack
-#     sections:
-#     - file: class/install_ds_stack_mac
-#       title: "\u2756 macOS"
-#     - file: class/install_ds_stack_ubuntu
-#       title: "\u2756 Ubuntu"
-#     - file: class/install_ds_stack_windows
-#       title: "\u2756 Windows"
+- caption: Getting started!
+  chapters:
+  # - file: getting-started/todo_list
+  #   title: Things to do before start of course
+  - file: class/install_ds_stack
+    sections:
+    - file: class/install_ds_stack_mac
+      title: "\u2756 macOS"
+    - file: class/install_ds_stack_ubuntu
+      title: "\u2756 Ubuntu"
+    - file: class/install_ds_stack_windows
+      title: "\u2756 Windows"
 
 # - caption: Lectures
 #   chapters:
