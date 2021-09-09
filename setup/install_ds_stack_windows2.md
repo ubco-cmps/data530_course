@@ -21,7 +21,7 @@ Append the following line to the file
 
 ```
 # Add R and Rscript to PATH
-export PATH="/c/Program Files/R/R-4.0.2/bin/x64":$PATH
+export PATH="/c/Program Files/R/R-4.1.1/bin/x64":$PATH
 ```
 
 Then save the file and exit VS Code.
@@ -250,8 +250,8 @@ with the following to prepend make's bin folder to the PATH
 so you don't need to replace it manually.
 
 ```
-# Add R, Rscript, and Make to path
-export PATH="/c/Users/${USERNAME}/make-4.3/bin":"/c/Program Files/R/R-4.0.2/bin/x64":$PATH
+# Add R, Rscript, and Make to path (remember to update the text below to make sure it's actually the version you install!)
+export PATH="/c/Users/${USERNAME}/make-4.3/bin":"/c/Program Files/R/R-4.1.1/bin/x64":$PATH
 ```
 
 Then save the file and exit VS Code.

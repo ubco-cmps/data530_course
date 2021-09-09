@@ -131,7 +131,6 @@ To install packages individually, we can now use the following command: `conda i
 Let's install the key packages needed (you will note that we're also specifying certain versions of the package with `= X.Y`):
 
 ```
-conda install -c conda-forge conda install
 conda install -c conda-forge "jupyterlab=3.*"
 conda install -c conda-forge "numpy=1.*"
 conda install -c conda-forge "pandas=1.*"
