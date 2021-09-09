@@ -241,8 +241,8 @@ code ~/.bash_profile
 And replace the section that reads:
 
 ```
-# Add R and Rscript to path
-export PATH="/c/Program Files/R/R-4.0.2/bin/x64":$PATH
+# Add R and Rscript to path (remember to update the text below to make sure it's actually the version you install!)
+export PATH="/c/Program Files/R/R-4.1.1/bin/x64":$PATH
 ```
 
 with the following to prepend make's bin folder to the PATH
