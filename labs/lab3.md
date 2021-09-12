@@ -1,4 +1,4 @@
-## Lab 3: Excel Formulas and Functions
+# Lab 3: Excel Formulas and Functions
 
 In this lab you will practice using Microsoft Excel to manipulate, transform, and analyze data.
 

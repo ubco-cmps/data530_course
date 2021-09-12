@@ -1,4 +1,4 @@
-## DATA 530 Lab 3 - Excel Data Analysis
+# Lab 4 - Advanced Excel Analysis
 
 This lab practices using Microsoft Excel to perform analysis of business data including reporting and predictions.
 
@@ -9,26 +9,22 @@ This lab practices using Microsoft Excel to perform analysis of business data in
   - Develop what-if scenarios to make it easy to communicate possibilities.
   - Use goal seek to determine sales targets.
   - Experiment with analysis toolpak.
-  - Create a macro using the macro recorder.
-  - Execute a recorded macro to automate a repetitive task.
-  - Create a user-defined function in VBA using the Visual Basic Editor.
-  - Use a user-defined function.
   
 ### Analysis Problem and Goals
 
 This scenario involves analyzing real-world, historical business sales data.  This [data set](http://research.chicagobooth.edu/kilts/marketing-databases/dominicks) was collected by the University of Chicago from 1989 to 1997 for the company Dominick's Finer Foods.  From this large data set, we are going to perform an analysis on the store-level sales data which contains data for each UPC sold at every store on a weekly basis.  The format of the data is below and a [detailed description is available](http://research.chicagobooth.edu/~/media/5F29F56C65894FA194132DB8D36292B3.pdf).
 
-|   Variable | Description  | Type |  Length |
-|------------|--------------|------|---------|
-upc     |		UPC Number    |		Numeric   |	  8 |
-store   |		Store Number  |	  Numeric   |	  3 |
-week    |		Week Number   |	  Numeric   |	  3 |
-move    |		Number of unit sold|	Numeric |	8 |
-price   |		Retail Price  |	  Numeric |	    8 |
-qty     |		Number of item bundled together |	Numeric |	3 |
-profit  |		Gross margin  |	  Numeric |	8 |
-sale    |		Sale code (B, C, S) |	Character |	8 |
-ok      |		1 for valid date, 0 for trash |	Numeric |	3 |
+| Variable | Description                     | Type      | Length |
+|----------|---------------------------------|-----------|--------|
+| upc      | UPC Number                      | Numeric   | 8      |
+| store    | Store Number                    | Numeric   | 3      |
+| week     | Week Number                     | Numeric   | 3      |
+| move     | Number of unit sold             | Numeric   | 8      |
+| price    | Retail Price                    | Numeric   | 8      |
+| qty      | Number of item bundled together | Numeric   | 3      |
+| profit   | Gross margin                    | Numeric   | 8      |
+| sale     | Sale code (B, C, S)             | Character | 8      |
+| ok       | 1 for valid date, 0 for trash   | Numeric   | 3      |
 
 **Note: To calculate the gross sales, use ```price * move / qty```.  To calculate the gross profit, multiple sales by ```profit/100```.**
 
@@ -50,7 +46,7 @@ The analysis goals are:
 	
 ### Marking and Evaluation
 
-Marks are awarded by *precisely* following these requirements:
+Marks are awarded by following these requirements:
 
 1. **Loading (1 mark) -** submit an Excel file called **lab3.xlsm** (Excel macros enabled) where the first sheet is called **rawdata** and contains the loaded data set with no changes.
 
