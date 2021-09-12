@@ -1,119 +1,93 @@
-## DATA 530 Lab 3 - Excel Data Analysis
+## Lab 3: Excel Formulas and Functions
 
-This lab practices using Microsoft Excel to perform analysis of business data including reporting and predictions.
+In this lab you will practice using Microsoft Excel to manipulate, transform, and analyze data.
 
 ### Objectives
 
-  - Manipulate sales data commonly seen in business applications.
-  - Create several pivot tables and pivot charts.
-  - Develop what-if scenarios to make it easy to communicate possibilities.
-  - Use goal seek to determine sales targets.
-  - Experiment with analysis toolpak.
-  - Create a macro using the macro recorder.
-  - Execute a recorded macro to automate a repetitive task.
-  - Create a user-defined function in VBA using the Visual Basic Editor.
-  - Use a user-defined function.
-  
+  - Load CSV data into Excel and convert into a spreadsheet for processing.
+  - Perform simple data cleaning (missing, incorrect) values, data type conversion, and cell formatting.
+  - Understand and use Excel cell addressing including absolute addresses.
+  - Create formulas including string and date functions, aggregate functions, and formulas with decisions.
+  - Perform sorting and filtering to transform data for analysis.
+  - Produce charts to visualize data and communicate results including using trendlines. 
+
 ### Analysis Problem and Goals
 
-This scenario involves analyzing real-world, historical business sales data.  This [data set](http://research.chicagobooth.edu/kilts/marketing-databases/dominicks) was collected by the University of Chicago from 1989 to 1997 for the company Dominick's Finer Foods.  From this large data set, we are going to perform an analysis on the store-level sales data which contains data for each UPC sold at every store on a weekly basis.  The format of the data is below and a [detailed description is available](http://research.chicagobooth.edu/~/media/5F29F56C65894FA194132DB8D36292B3.pdf).
+This scenario involves analyzing data collected by sensors and applies to a variety of real-world applications including environmental monitoring (temperature, precipitation, wind, etc.), industrial and production sensors, and even monitoring of people using mobile devices and GPS. There are multiple monitoring *sites*.  Each site has one or more *sensors* that take a reading in a given interval.  Typically, *readings* are either an integer or floating-point value.  In this lab, each reading will consist of:
 
-|   Variable | Description  | Type |  Length |
-|------------|--------------|------|---------|
-upc     |		UPC Number    |		Numeric   |	  8 |
-store   |		Store Number  |	  Numeric   |	  3 |
-week    |		Week Number   |	  Numeric   |	  3 |
-move    |		Number of unit sold|	Numeric |	8 |
-price   |		Retail Price  |	  Numeric |	    8 |
-qty     |		Number of item bundled together |	Numeric |	3 |
-profit  |		Gross margin  |	  Numeric |	8 |
-sale    |		Sale code (B, C, S) |	Character |	8 |
-ok      |		1 for valid date, 0 for trash |	Numeric |	3 |
+  - **siteid** - an integer identifying a site uniquely
+  - **sensorid** - an integer identifying a sensor at a particular site uniquely
+  - **timestamp** - when the reading occurred (in JSON format)
+  - **value** - an integer reading between 0 and 100, although data may be missing or incorrect
 
-**Note: To calculate the gross sales, use ```price * move / qty```.  To calculate the gross profit, multiple sales by ```profit/100```.**
+Sensor readings are done every 15 minutes but may be missed (no data) or contain incorrect values out of range (less than 0 and above 100) or values that indicate error conditions (not at a number at all).
 
-[Click to download the data set](data.csv) that consists of the sales for the top 20 products from the Cookie category for 5 stores from 1992 to 1996.
+[Download data set](data.csv) that consists of 5 sites each with 3 sensors that take readings every 15 minutes for 3 days.
 
 #### Goals
 
 The analysis goals are:
 
-1. **Loading -** load the input CSV file into Excel and convert into an Excel spreadsheet file.
+ 1. **Loading** - load the input CSV file into Excel and convert into an Excel spreadsheet file.
+ 2. **Cleaning** - take the raw data and remove missing/incomplete values and convert the time currently in JSON string form to an Excel datetime.
+ 3. **Formatting** - apply conditional formating to clean data set to improve readability.
+ 4. **Summary** - calculate summary statistics for the data set including number of readings and maximum/minimum values.
+ 5. **Visualization** - create charts that show the sensor readings by time with trendlines.
+ 6. **Analysis** - determine if there are any trends in the sensor data.
 
-2. **Cleaning -** filter out all data indicated as "trash" (value **0**) in **ok** field.
-
-3. **Summary -** create pivot tables for analyzing sales and profits.
-	
-4. **Visualization -** create charts to display data from pivot tables.
-	
-5. **Analysis -** use the sales data to answer analysis questions such as most profitable items, future estimated sales, and what-if scenarios.	
-	
-### Marking and Evaluation
+### Marking and Evaluation (18 marks)
 
 Marks are awarded by *precisely* following these requirements:
 
-1. **Loading (1 mark) -** submit an Excel file called **lab3.xlsm** (Excel macros enabled) where the first sheet is called **rawdata** and contains the loaded data set with no changes.
+1. **Loading (1 mark) -** submit an Excel file called **lab2.xlsx** where the first sheet is called **rawdata** and contains the loaded data set with no changes.
 
-2. **Cleaning (3 marks) -** create a second sheet called **data** that contains the data set after the following formatting and cleaning:
-	  - Header fields must be in bold font.  UPC field must display entire value (make sure column width is wide enough). (0.5 marks)
-	- Add a column called **Sales** which is calculated as: ```price * move / qty```.  Add a column called **GrossProfit** which is calculated as: ``Sales * Profit/100``.  Both columns must be formatted as **Currency**. (0.5 marks)
-	- Add a column called **Year** that calculates the year for each week. (1 mark)<br>
-			- 1992 - Weeks 120 to 172<br>
-			- 1993 - Weeks 173 to 225<br>
-			- 1994 - Weeks 226 to 277<br>
-			- 1995 - Weeks 278 to 329<br>
-			- 1996 - Weeks 330 to 381<br>
-				
-	- The data must be sorted by **week** (ascending), then **store** (ascending), then **UPC** (descending). (0.5 marks)
-	- Filter data so only values of ```OK=1``` appear (no trash data). (0.5 marks)
-	
-3. **Summary Analysis and Visualization (3 marks) -** create a third sheet called **pivot** that contains:
-	- A pivot table for overall sales by year with a line chart. (1 mark)
-	- A pivot table for overall gross profit by stores by year with a stacked column chart. (1 mark)
-	- A pivot table for overall sales and profits by UPC with a clustered bar chart. Sort by total gross profit descending. (1 mark)
-	
-4. **Analysis (3 marks) -** create a fourth sheet called **analysis** that contains:
-	- In cell **A2**, estimate the total sales for the company in 1997 and give a short reason in cell **B2** for your estimate. (1 mark)
-	- Based on 1996 sales, predict the top 2 selling products (by **Sales**) (provide UPC) for 1997 for store **2**. Put UPC codes in cells **A6** and **A7** and an explanation in **B6**. (2 marks)
-	
-	- **Note: None of these values in the analysis tab need to be calculated with formulas. You must just figure out the right answer and type it in as a value in the cell.**
-	
-5. **Predictions (3 marks) -** create a fifth sheet called **predict** that contains:
-	
-	- Gross profit data for 1996 per store and a column for predicted gross profit for 1997 and 1998.  The predicted gross profit will be a percentage change from 1996.  This percentage will be in cell **H3**.  Use what-if scenarios to create three scenarios: 1) Good (+20%),  2) Same (0%), and 3) Bad (-20%).  (2 marks)
-	- Use goal seek to determine the % profit change necessary so total 1998 gross profit is **$100,000**.  Put that value in cell **G6**. (1 mark)
-	
-6. **Regression (1 mark) -** compute a regression on sales (Y variable) and GrossProfit (X variable) and rename the regression result sheet as **regression**.  The regression shown uses all records including those with **OK=0**.
+2. **Cleaning and Formatting (8 marks) -** create a second sheet called **data** that contains the data set after all incorrect and out-of-range values have been removed. Data should be referenced from **rawdata** sheet NOT copied.
 
-7. **Interesting Analysis (1 mark) -** create a new sheet called **Interesting** that performs some analysis to determine any useful insight from the data with an explanation on what you did and why it is interesting.
+	* Header fields must be in bold font (0.5 marks).
 
-8. **Bonus (1 mark) -** create a UDF called **age** that returns an age given a (birth) date. Create a new sheet called **udf** to test your function.
+	* Create a new column called **cleanvalue** where any data that is not a number, is less than 0, or above 100 should be replaced by **NA()**. Otherwise copy over the number in the **value** column. (1 mark)	
+	
+	* Timestamp field must be formatted as a date field in this format yyyy/mm/dd hh:mm:ss (2 marks) (will need custom format). Hint: May need to use [DATEVALUE function](https://support.office.com/en-us/article/DATEVALUE-function-df8b07d4-7761-4a93-bc33-b7471bbff252), [TIME function](https://support.office.com/en-us/article/TIME-function-9A5AFF99-8F7D-4611-845E-747D0B8D5457), and [MID](https://support.office.com/en-us/article/MID-MIDB-functions-d5f9e25c-d7d6-472e-b568-4ecb12433028) to convert date. ([More info](http://chandoo.org/wp/2010/03/23/text-to-date-convertion/)) Note that both the DATE and TIME need to be converted and added together to get a DATETIME.
 
-9. **Note:** You may have additional working sheets in your spreadsheet.  (The screenshots show **forecast** which you do not have to make).
+	* Using conditional formatting rules, format any value with an **#ERROR#** value to have a red background and any value with an **#INFO#** to have a blue background. (1 mark)
 
+	* Using conditional formatting rules, format the whole row that contains a **#NA#** value to have an orange background, and any value not in range 0 to 100 have a black background with white font with strikethrough. Hint: Use conditional rule: "Use a formula to determine which cells to format." (1 mark)
+
+	* Add a column called **global_id** that is generated by ```siteid&"_"&sensorid``` (0.5 marks).
+
+	* Data must be sorted by siteid (ascending), sensorid (descending), then timestamp (ascending) (1 mark).
+
+	* Filter data to not display any rows for site 3 sensor 1. Note: Do not delete any data. (1 mark).
+
+3. **Summary (5 marks) -** create a third sheet called **summary** that contains the following items:
+
+	* Count of total readings and valid readings (with percentage of total). (0.5 marks)
+	* Count of readings wwith #ERROR#, #NA#, and #INFO#, and not in range (with percentages). (2 marks)
+	* Average reading (0.5 marks)
+	* Maximum reading (0.5 marks)
+	* Minimum reading (0.5 marks)
+	* Maximum valid reading (0.5 marks) Hint: Ctrl+Shift+Enter will be useful. [Reference](http://superuser.com/questions/674566/when-to-use-ctrlshiftenter-and-when-to-use-enter-in-excel)
+	* Minimum valid reading (0.5 marks)
+	
+4. **Visualization (3 marks) -** create a **XY Scatter chart (with smooth lines and markers)** on a sheet called **chart** that shows the readings by time for all three sensors at site 2. Add a linear trendline for sensor 3 at site 2. Hint: Adjusting axis will be necessary, and I suggest making separate plots on the same sheet rather than plotting everything on one sheet.
+
+5. **Analysis (1 marks) -** in the **summary** sheet put the following:
+	* Number of sensors with a linear trend (observed not calculated) (0.5 marks)
+	* Number of sensors with no trend (observed not calculated) (0.5 marks)
+
+When complete, add your Excel file into this repo **lab2.xlxs** and submit it on GitHub as normal.
 
 ### Screenshots
 
 #### rawdata sheet
 
-<img src="img/lab3_rawdata.png" width="800">
+<img src="img/lab2_rawdata.png" width="800">
 
 #### data sheet
 
-<img src="img/lab3_data.png" width="800">
+<img src="img/lab2_data_1.png" width="800">
+<img src="img/lab2_data_2.png" width="800">
 
-#### pivot sheet
+#### summary sheet
 
-<img src="img/lab3_pivot.png" width="800">
-
-#### analysis sheet
-
-<img src="img/lab3_analysis.png" width="800">
-
-#### predict sheet
-
-<img src="img/lab3_predict.png" width="800">
-
-#### regression sheet
-
-<img src="img/lab3_regression.png" width="800">
+<img src="img/lab2_summary.png" width="800">
