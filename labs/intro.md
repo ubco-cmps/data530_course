@@ -6,12 +6,12 @@ We are using GitHub Classroom to provision the labs.
 You will first need to accept the invitation to join our GitHub Classroom.
 Once the lab is ready for you to accept, click the below to accept the lab:
 
-| Lab                          | Due Date                            | Link to Accept                                        |
-|------------------------------|-------------------------------------|-------------------------------------------------------|
-| [Lab 1 - Install the DS Stack](lab1) | Wed September 16 at 18:00           | [Accept Lab](https://classroom.github.com/a/awEYuZTH) |
-| [Lab 2 - Excel Formulas and Functions](lab2) | Wed September 23 at 18:00           | [Accept Lab](https://classroom.github.com/a/yo3uBbEL)                                        |
-| [Lab 3 - Advanced Excel](lab3)                  | Wed September 30 at 18:00           | [Accept Lab](https://classroom.github.com/a/drYYru1U)                                        |
-| [Lab 4 - Debugging and Command Line](lab4) | Wed October 9 at 18:00 | [Accept Lab](https://classroom.github.com/a/hLvE49XU)                                        |
+| Lab                                          | Due Date                  | Link to Accept                                        |
+|----------------------------------------------|---------------------------|-------------------------------------------------------|
+| [Lab 1 - Install the DS Stack](lab1)         | Tues September 14 at 18:00 | [Accept Lab](https://classroom.github.com/a/od-XEqSk) |
+| [Lab 2 - Debugging and Command Line](lab2)   | Tues September 21 at 18:00 | [Accept Lab](https://classroom.github.com/a/sR365ria) |
+| [Lab 3 - Excel Formulas and Functions](lab3) | Tues September 28 at 18:00 | [Accept Lab](https://classroom.github.com/a/PoLOeFuu) |
+| [Lab 4 - Advanced Excel](lab4)               | Tues October 5 at 18:00    | [Accept Lab](https://classroom.github.com/a/8xiC1o_c) |
 
 Once you click the link, a repository will automatically be created for you with some starter code.
 You can now work on the lab, make commits, and push them to GitHub as you please. 

@@ -41,18 +41,19 @@ parts:
 #     title: Lecture 6 - Online Services
 #   - file: class/Lecture7
 #     title: Lecture 7 - Debugging and Help
-# - caption: Labs
-#   chapters:
-#   - file: labs/intro
-#     title: Start here!
-#   - file: labs/lab1
-#     title: Lab 1 - DS Stack
-#   - file: labs/lab2
-#     title: Lab 2 - Introduction to Excel
-#   - file: labs/lab3
-#     title: Lab 3 - Advanced Excel
-#   - file: labs/lab4
-#     title: Lab 4 - Debugging and Terminal
+
+- caption: Labs
+  chapters:
+  - file: labs/intro
+    title: Start here!
+  - file: labs/lab1
+    title: Lab 1 - DS Stack
+  - file: labs/lab2
+    title: Lab 2 - Introduction to Excel
+  - file: labs/lab3
+    title: Lab 3 - Advanced Excel
+  - file: labs/lab4
+    title: Lab 4 - Debugging and Terminal
 
 - caption: Course Feedback
   chapters:
