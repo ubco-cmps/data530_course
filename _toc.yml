@@ -25,22 +25,22 @@ parts:
     - file: setup/install_ds_stack_windows2
       title: "\u2756 Windows (Part 2)"
 
-# - caption: Lectures
-#   chapters:
-#   - file: class/Lecture1
-#     title: Lecture 1 - Platforms
-#   - file: class/Lecture2
-#     title: Lecture 2 - Command Line and Stack
-#   - file: class/Lecture3
-#     title: Lecture 3 - Introduction to Excel
-#   - file: class/Lecture4
-#     title: Lecture 4 - Data analysis with Excel
-#   - file: class/Lecture5
-#     title: Lecture 5 - Jupyter Lab, VS Code, GitHub Pages
-#   - file: class/Lecture6
-#     title: Lecture 6 - Online Services
-#   - file: class/Lecture7
-#     title: Lecture 7 - Debugging and Help
+- caption: Lectures
+  chapters:
+#   - file: class/Class1
+#     title: Class 1 - Introduction to Platforms
+  - file: class/Class2
+    title: Class 2 - Labs in MDS
+#   - file: class/Class3
+#     title: Class 3 - Introduction to Excel
+#   - file: class/Class4
+#     title: Class 4 - Data analysis with Excel
+#   - file: class/Class5
+#     title: Class 5 - Jupyter Lab, VS Code, GitHub Pages
+#   - file: class/Class6
+#     title: Class 6 - Online Services
+#   - file: class/Class7
+#     title: Class 7 - Debugging and Help
 
 - caption: Labs
   chapters:
