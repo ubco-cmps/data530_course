@@ -49,11 +49,11 @@ parts:
   - file: labs/lab1
     title: Lab 1 - DS Stack
   - file: labs/lab2
-    title: Lab 2 - Introduction to Excel
+    title: Lab 2 - Debugging and Terminal
   - file: labs/lab3
-    title: Lab 3 - Advanced Excel
+    title: Lab 3 - Introduction to Excel
   - file: labs/lab4
-    title: Lab 4 - Debugging and Terminal
+    title: Lab 4 - Advanced Excel
 
 - caption: Course Feedback
   chapters:
