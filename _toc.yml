@@ -27,10 +27,10 @@ parts:
 
 - caption: Lectures
   chapters:
-#   - file: class/Class1
-#     title: Class 1 - Introduction to Platforms
   - file: class/Class2
     title: Class 2 - Labs in MDS
+#   - file: class/Class1
+#     title: Class 1 - Introduction to Platforms
 #   - file: class/Class3
 #     title: Class 3 - Introduction to Excel
 #   - file: class/Class4
