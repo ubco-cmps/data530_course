@@ -27,20 +27,20 @@ parts:
 
 - caption: Lectures
   chapters:
+  - file: class/Class1
+    title: Class 1 - Introduction to Platforms
   - file: class/Class2
     title: Class 2 - Labs in MDS
-#   - file: class/Class1
-#     title: Class 1 - Introduction to Platforms
-#   - file: class/Class3
-#     title: Class 3 - Introduction to Excel
-#   - file: class/Class4
-#     title: Class 4 - Data analysis with Excel
-#   - file: class/Class5
-#     title: Class 5 - Jupyter Lab, VS Code, GitHub Pages
-#   - file: class/Class6
-#     title: Class 6 - Online Services
-#   - file: class/Class7
-#     title: Class 7 - Debugging and Help
+  - file: class/Class3
+    title: Class 3 - Jupyter Lab, RStudio, Code Spaces, VS Code
+  - file: class/Class4
+    title: Class 4 - Introduction to Excel
+  - file: class/Class5
+    title: Class 5 - Data analysis with Excel
+  - file: class/Class6
+    title: Class 6 - Online Services
+  - file: class/Class7
+    title: Class 7 - Debugging and Help
 
 - caption: Labs
   chapters:

@@ -1,4 +1,4 @@
-# Lecture 6 - Online Services
+# Class 6 - Online Services
 
 <iframe src="../data_530_online_services_lecture6.pdf" width="100%" height="800px" frameBorder="0"> </iframe>
 

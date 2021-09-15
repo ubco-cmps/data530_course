@@ -1,13 +1,23 @@
-# Lecture 3 - Introduction to Microsoft Excel
+# Class 3 - Jupyter Lab, RStudio, Code Spaces, VS Code
 
-<iframe src="../data_530_excel_intro_lecture3.pdf" width="100%" height="800px" frameBorder="0"> </iframe>
+We are going to spend a bit of time today working with the tools we have installed to get you familiarized with them, and get them "tuned" up.
+This will mostly be demos and I hope it is very interactive and you ask lots of questions.
 
-## Excel file using in lecture.
+## Outline
 
-You can download the [Excel file used in lecture here](https://github.com/ubco-mds-2020/data_530/raw/master/sales.xlsx)
+1. Extending Jupyter Lab and Jupyter Notebooks (20 minutes)
+    - Exporting and saving notebooks
+    - Version Control of Notebooks: [the problem](https://nextjournal.com/schmudde/how-to-version-control-jupyter) and [the solution](https://towardsdatascience.com/version-control-with-jupyter-notebook-b9630bc5996e)
+    - [nbconvert](https://nbconvert.readthedocs.io/en/latest/)
+    - [JupyText](https://jupytext.readthedocs.io/en/latest/introduction.html)
+    - [Support for Jupyter Notebooks in VSCode](https://code.visualstudio.com/docs/python/jupyter-support)
+    - Code formatter in Jupyter Lab
 
-## Sli.do Polls
+2. RStudio (10 minutes)
 
-You can go to [https://sli.do/data530](https://sli.do/data530) in a new tab or use the embedded poll here:
+3. Demo of Code Spaces (10 minutes)
 
-<iframe src="https://app.sli.do/event/0oandysw" height="100%" width="100%" style="min-height: 560px;"></iframe>
+4. VS Code extensions (20 minutes)
+    - Version Control and going back in time
+    - Workspaces in VS Code
+    - GitLens

@@ -19,7 +19,7 @@ html:
   comments:
     hypothesis: false
     utterances:
-      repo: "ubco-cmps/mds_course_template"
+      repo: "ubco-cmps/data530_courses"
   extra_footer : |
       <div>
       <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
