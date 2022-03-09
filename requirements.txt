@@ -1,4 +1,4 @@
 jupyter-book
 matplotlib
 numpy
-jupyterlite-sphinx
+jupyterlite-sphinx==0.4.1
