@@ -37,6 +37,8 @@ repository:
   branch       : main
 
 sphinx:
+  extra_extensions:
+    - jupyterlite_sphinx
   config:
     html_show_copyright: false
     html_extra_path: ['files']
